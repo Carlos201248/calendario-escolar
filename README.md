@@ -1,39 +1,97 @@
-📅 Calendario Escolar 2025 Este proyecto es un Calendario Escolar Interactivo y Responsivo diseñado para la Unidad Educativa Juana Azurduy De Padilla. Su objetivo es servir como una herramienta digital accesible para consultar todas las fechas, eventos y actividades importantes del año escolar.
+# 📅 Calendario Escolar 2025  
 
-El diseño está optimizado para dispositivos móviles, utilizando un tema oscuro (Dark Mode) moderno y elementos interactivos impulsados por JavaScript.
+**Proyecto:** Calendario Escolar Interactivo y Responsivo  
+**Institución:** Unidad Educativa *Juana Azurduy De Padilla*  
+**Año:** 2025  
 
-✨ Características Destacadas Diseño Responsivo (Mobile-First): Experiencia de usuario consistente y optimizada en cualquier dispositivo (teléfonos, tablets y escritorio) gracias a las Media Queries del CSS.
+Este proyecto fue desarrollado como una herramienta digital para consultar de forma rápida y atractiva **todas las fechas, eventos y actividades importantes del año escolar**.  
+El diseño está optimizado para distintos dispositivos y cuenta con un moderno **modo oscuro (Dark Mode)**.
 
-Tema Oscuro Moderno: Uso de variables CSS para un esquema de colores atractivo (--fondo, --primario, --secundario).
+---
 
-Contador Regresivo Dinámico: Muestra el número exacto de días restantes para el próximo evento importante.
+## ✨ Características Destacadas  
 
-Interactividad con Modal: Al hacer clic en una fila de la tabla de fechas, se despliega un modal (popup) con la descripción detallada del evento.
+- **📱 Diseño Responsivo (Mobile-First):**  
+  Experiencia de usuario consistente en celulares, tablets y computadoras, usando *Media Queries* de CSS.  
 
-Componentes Modulares:
+- **🌙 Tema Oscuro Moderno:**  
+  Uso de variables CSS personalizadas para un esquema visual atractivo (`--fondo`, `--primario`, `--secundario`).  
 
-Tabla de Fechas (#tabla-fechas)
+- **⏳ Contador Regresivo Dinámico:**  
+  Muestra el número exacto de días restantes hasta el próximo evento importante.  
 
-Tarjetas de Actividades (#cards-actividades)
+- **💬 Interactividad con Modal:**  
+  Al hacer clic en una fecha, se despliega un modal con la descripción detallada del evento.  
 
-Sección de Presentación de Creadores.
+- **🧩 Componentes Modulares:**  
+  - Tabla de Fechas (`#tabla-fechas`)  
+  - Tarjetas de Actividades (`#cards-actividades`)  
+  - Sección de Creadores  
 
-🛠️ Tecnologías El proyecto fue construido utilizando un stack de desarrollo web clásico:
+---
 
-Tecnología Propósito HTML5 Estructura semántica del contenido. CSS3 Estilizado, animaciones, y responsividad (Media Queries y Flexbox). JavaScript (ES6) Lógica de la aplicación: carga de datos, contador de días, y gestión del modal. Google Fonts Tipografía Poppins. 🚀 Instalación y Ejecución Para ejecutar este calendario localmente, simplemente sigue estos pasos:
+## 🛠️ Tecnologías Utilizadas  
 
-Clonar o Descargar: Obtén todos los archivos del proyecto (index.html, style.css, script.js y las imágenes de creadores).
+| Tecnología | Propósito |
+|-------------|------------|
+| **HTML5** | Estructura semántica del contenido |
+| **CSS3** | Estilos, animaciones y diseño responsivo (Flexbox y Media Queries) |
+| **JavaScript (ES6)** | Lógica de la aplicación, contador y gestión del modal |
+| **Google Fonts (Poppins)** | Tipografía moderna y legible |
 
-Abrir el HTML: Haz doble clic en el archivo index.html. El navegador cargará automáticamente los estilos y la lógica interactiva.
+---
 
-Nota: Asegúrate de que las rutas de las imágenes de los creadores en tu index.html sean correctas y relativas al proyecto, por ejemplo: src="imagen-carlos.jpg".
+## 🚀 Instalación y Ejecución  
 
-⚙️ Estructura de Archivos . ├── index.html # Estructura principal. ├── style.css # Todos los estilos, variables y responsividad (Media Queries). ├── script.js # Lógica de la carga de datos, contador y modal. └── [imagenes] # Directorio o archivos de imágenes de los creadores (ej: imagen-carlos.jpg). 📝 Edición y Personalización Para actualizar el calendario, modificar o añadir nuevos eventos, solo debes editar el array fechas en el archivo script.js:
+1. **Clona o descarga** este repositorio:  
+   ```bash
+   git clone https://github.com/usuario/calendario-escolar-2025.git
 
-JavaScript
+    Abre el archivo index.html en tu navegador.
 
-// script.js const fechas = [ // Formato de fecha requerido: MM/DD/AAAA { fecha: "2/3/2025", evento: "Inicio de Clases", tipo: "Escolar", descripcion: "..." }, { fecha: "3/19/2025", evento: "Día del Padre", tipo: "Escolar", descripcion: "..." }, // Añade más eventos aquí... ]; 👥 Equipo de Desarrollo Este proyecto fue desarrollado bajo la metodología Scrum como parte de un Taller Ágil:
+    Asegúrate de que las imágenes de los creadores estén en el mismo directorio o en la carpeta imagenes/ con rutas correctas, por ejemplo:
 
-Rol Nombre Product Owner Isaura Cardenas Scrum Master Antonio Saavedra Desarrollador Frontend Carlos Silva Desarrollador Frontend Isaac Rodriguez Desarrollador Frontend Ricardo Gareca
+    <img src="imagenes/imagen-carlos.jpg" alt="Carlos Silva">
 
-© 2025 Unidad Educativa Juana Azurduy De Padilla | Proyecto: Taller Ágil - Scrum
+⚙️ Estructura del Proyecto
+
+📦 calendario-escolar-2025/
+├── index.html      # Estructura principal
+├── style.css       # Estilos, variables y media queries
+├── script.js       # Lógica del contador, modal y carga de datos
+└── imagenes/       # Fotos o íconos de los creadores
+
+📝 Edición y Personalización
+
+Para añadir o modificar eventos, edita el array fechas en script.js:
+
+// script.js
+const fechas = [
+  { 
+    fecha: "2/3/2025", 
+    evento: "Inicio de Clases", 
+    tipo: "Escolar", 
+    descripcion: "Inicio oficial del año lectivo." 
+  },
+  { 
+    fecha: "3/19/2025", 
+    evento: "Día del Padre", 
+    tipo: "Conmemorativo", 
+    descripcion: "Celebración institucional por el Día del Padre." 
+  },
+  // Agrega más eventos aquí...
+];
+
+👥 Equipo de Desarrollo
+Rol	Nombre
+🧭 Product Owner	Isaura Cárdenas
+⚙️ Scrum Master	Antonio Saavedra
+💻 Desarrollador Frontend	Carlos Silva
+💻 Desarrollador Frontend	Isaac Rodríguez
+💻 Desarrollador Frontend	Ricardo Gareca
+📜 Créditos
+
+© 2025 Unidad Educativa Juana Azurduy De Padilla
+Proyecto: Taller Ágil - Scrum
+Desarrollado con dedicación y trabajo en equipo por:
+Isaac Rodríguez, Ricardo Gareca, Antonio Saavedra, Isaura Cárdenas y Carlos Silva.
